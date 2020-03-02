@@ -8,13 +8,17 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Hi people!</h1>
+    <p>I am Rocketgirl, let's explore the universe of programming together.</p>
+
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <br />
+    <a href="https://www.freepik.com/free-photos-vectors/background">
+      Background vector created by freepik - www.freepik.com
+    </a>
   </Layout>
 )
 
