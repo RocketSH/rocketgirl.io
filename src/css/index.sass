@@ -1,0 +1,28 @@
+$navigation-height: 60px
+$navigation-bg: #fafafa
+$font-family: -apple-system, BlinkMacSystemFont
+
+html
+    font-size: 100%
+
+body
+    background-color: salmon
+    font-family: $font-family
+    margin: 0
+    padding: 0
+
+.navigation
+    height: $navigation-height
+    line-height: $navigation-height
+    display: flex
+    background-color: $navigation-bg
+    align-items: center
+
+.navigation__item, .navigation__logo
+    text-decoration: none
+    padding: 0 1em
+    height: $navigation-height
+    line-height: $navigation-height
+
+.push-right
+    margin-left: auto
