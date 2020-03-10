@@ -3,5 +3,8 @@
   "semi": false,
   "singleQuote": false,
   "tabWidth": 2,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "jsxBracketSameLine": true,
+  "jsxSingleQuote": false,
+  "bracketSpacing": false
 }
