@@ -1,6 +1,6 @@
-$navigation-height: 60px
-$navigation-bg: #fafafa
-$font-family: -apple-system, BlinkMacSystemFont
+@import variables
+@import hero
+@import footer
 
 html
     font-size: 100%
@@ -17,12 +17,14 @@ body
     display: flex
     background-color: $navigation-bg
     align-items: center
+    color: $navigation-fg
 
 .navigation__item, .navigation__logo
     text-decoration: none
     padding: 0 1em
     height: $navigation-height
     line-height: $navigation-height
+    color: inherit
 
 .push-right
     margin-left: auto
