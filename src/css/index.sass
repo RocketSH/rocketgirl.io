@@ -1,30 +1,27 @@
 @import variables
 @import hero
 @import footer
+@import navigation
 
 html
     font-size: 100%
 
 body
-    background-color: salmon
+    background-color: #ffffff
     font-family: $font-family
     margin: 0
     padding: 0
 
-.navigation
-    height: $navigation-height
-    line-height: $navigation-height
+.layout // header, main, footer
+    min-height: 100vh
     display: flex
-    background-color: $navigation-bg
-    align-items: center
-    color: $navigation-fg
+    flex-direction: column
+    > main
+        flex: 1
 
-.navigation__item, .navigation__logo
-    text-decoration: none
-    padding: 0 1em
-    height: $navigation-height
-    line-height: $navigation-height
-    color: inherit
+.container
+    width: $container-width
+    margin: 0 auto
 
 .push-right
     margin-left: auto

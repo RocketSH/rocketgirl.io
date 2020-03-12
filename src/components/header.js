@@ -6,12 +6,12 @@ const Header = ({siteTitle}) => (
   <header className="navigation">
     <p className="navigation__logo">{siteTitle}</p>
 
-    <a href="#" className="navigation__item push-right">
+    <Link to="/" className="navigation__item push-right">
       Home
-    </a>
-    <a href="#" className="navigation__item">
+    </Link>
+    <Link to="/rails" className="navigation__item">
       Rails
-    </a>
+    </Link>
     <a href="#" className="navigation__item">
       HTML
     </a>
