@@ -4,7 +4,9 @@ import React from "react"
 
 const Header = ({siteTitle}) => (
   <header className="navigation">
-    <p className="navigation__logo">{siteTitle}</p>
+    <Link to="/" className="navigation__logo">
+      {siteTitle}
+    </Link>
 
     <Link to="/" className="navigation__item push-right">
       Home
