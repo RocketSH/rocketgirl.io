@@ -11,8 +11,9 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />
 
-    <Link to="/page-2/">Go to page 2</Link>
-    <br />
+    <p>
+      <Link to="/page-2/">Go to page 2</Link>
+    </p>
   </Layout>
 )
 

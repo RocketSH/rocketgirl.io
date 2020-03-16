@@ -2,6 +2,7 @@
 @import hero
 @import footer
 @import navigation
+@import blog
 
 html
     font-size: 100%
@@ -18,10 +19,24 @@ body
     flex-direction: column
     > main
         flex: 1
+        padding-top: $navigation-height
 
 .container
-    width: $container-width
-    margin: 0 auto
+    box-sizing: border-box
+    padding: 0 1rem
+    @media screen and (min-width: #{$container-width})
+        width: $container-width
+        margin: 0 auto
 
 .push-right
     margin-left: auto
+
+code
+    background-color: #eee
+    display: inline-block
+    padding: 0 0.2em
+    font-family: $font-code
+    color: $primary
+
+h1, h2, h3
+    margin: .2em 0 0
