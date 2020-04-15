@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Rocketgirl's Ruby Notes`,
+    title: `Rocketgirl's Ruby Galaxy`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },

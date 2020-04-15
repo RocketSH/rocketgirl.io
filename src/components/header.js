@@ -9,16 +9,13 @@ const Header = ({siteTitle}) => (
     </Link>
 
     <Link to="/" className="navigation__item push-right">
-      Home
+      那些地球上的旅行 Earth tour
     </Link>
     <Link to="/rails" className="navigation__item">
       Rails
     </Link>
     <a href="#" className="navigation__item">
-      HTML
-    </a>
-    <a href="#" className="navigation__item">
-      CSS
+      Frontend
     </a>
     <a href="#" className="navigation__item">
       Git
