@@ -12,6 +12,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
   const {createPage} = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+  const categoryTemplate = path.resolve(`src/templates/category.js`)
 
   const result = await graphql(`
     {
@@ -33,11 +34,6 @@ exports.createPages = async ({actions, graphql, reporter}) => {
     }
   `)
 
-  // {
-  //   "Rails": [1, 2],
-  //
-  // }
-
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
@@ -54,7 +50,17 @@ exports.createPages = async ({actions, graphql, reporter}) => {
       categories[category].push(frontmatter)
     })
   })
-  console.log(JSON.stringify(categories, null, 2))
+
+  Object.keys(categories).forEach(name => {
+    createPage({
+      path: `/${name.toLowerCase()}`,
+      component: categoryTemplate,
+      context: {
+        posts: categories[name],
+        categoryName: name,
+      },
+    })
+  })
   // console.log(JSON.stringify(result.data.allMarkdownRemark.edges))
 
   result.data.allMarkdownRemark.edges.forEach(({node}) => {

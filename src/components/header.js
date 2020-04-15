@@ -8,16 +8,18 @@ const Header = ({siteTitle}) => (
       {siteTitle}
     </Link>
 
-    <Link to="/" className="navigation__item push-right">
+    <Link
+      to="/那些地球上的旅行 Earth tour"
+      className="navigation__item push-right">
       那些地球上的旅行 Earth tour
     </Link>
     <Link to="/rails" className="navigation__item">
       Rails
     </Link>
-    <a href="#" className="navigation__item">
+    <a href="/frontend" className="navigation__item">
       Frontend
     </a>
-    <a href="#" className="navigation__item">
+    <a href="/git" className="navigation__item">
       Git
     </a>
   </header>
