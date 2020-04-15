@@ -1,20 +1,10 @@
 ---
-path: "/rails/symbols-in-ruby"
-date: "2020-03-16"
-title: "符號 Symbols in Ruby "
+path: "/rails/how-to-switch-database-adapter"
+date: "2020-04-15"
+title: "切換專案資料庫 How to switch Database adapter"
 categories:
   - Rails
----
-
-參考資料：
-Ruby 手冊： https://ruby-doc.org/core-2.7.0/Symbol.html
-
-老師著作：為你自己學 Ruby on Rails
-
----
-
-許久沒有動筆寫寫有架構的文章，在程式老師們強力推薦下 Rocketgirl's blog 終於動工啦，期待她一天一天茁壯成為水噹噹的姑娘。
-
+  - Databases
 ---
 
 今天第一篇文章主題： Ruby 中的「**`:symbol`符號**」究竟是啥東東呢？
