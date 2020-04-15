@@ -14,9 +14,9 @@ export default function Template({pageContext}) {
         <h1>{categoryName}</h1>
         <div className="category__grid">
           {posts.map(post => (
-            <Link to={post.path} className="post" key={post.path}>
-              <p className="post__title">{post.title}</p>
-              <p className="post__date">{post.date}</p>
+            <Link to={post.path} className="category__post" key={post.path}>
+              <p className="category__post__date">{post.date}</p>
+              <p className="category__post__title">{post.title}</p>
             </Link>
           ))}
         </div>

@@ -39,6 +39,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
   let postsData = result.data.allMarkdownRemark.edges
   let categories = {}
   postsData.forEach(function(post) {
