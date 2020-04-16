@@ -17,7 +17,10 @@ const Header = ({siteTitle}) => (
       Rails
     </Link>
     <a href="/frontend" className="navigation__item">
-      Frontend
+      HTML&CSS
+    </a>
+    <a href="/git" className="navigation__item">
+      Javascript
     </a>
     <a href="/git" className="navigation__item">
       Git

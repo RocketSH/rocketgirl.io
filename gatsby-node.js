@@ -41,23 +41,23 @@ exports.createPages = async ({actions, graphql, reporter}) => {
   }
 
   let postsData = result.data.allMarkdownRemark.edges
-  let categories = {}
+  let allCategories = {}
   postsData.forEach(function(post) {
     let frontmatter = post.node.frontmatter
     frontmatter.categories.forEach(category => {
-      if (!categories[category]) {
-        categories[category] = []
+      if (!allCategories[category]) {
+        allCategories[category] = []
       }
-      categories[category].push(frontmatter)
+      allCategories[category].push(frontmatter)
     })
   })
 
-  Object.keys(categories).forEach(name => {
+  Object.keys(allCategories).forEach(name => {
     createPage({
       path: `/${name.toLowerCase()}`,
       component: categoryTemplate,
       context: {
-        posts: categories[name],
+        posts: allCategories[name],
         categoryName: name,
       },
     })
