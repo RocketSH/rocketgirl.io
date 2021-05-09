@@ -1,9 +1,10 @@
 @import variables
 @import hero
 @import footer
-@import navigation
+@import hero-footer
 @import blog
 @import category
+@import bulma
 
 html
     font-size: 100%
@@ -18,16 +19,6 @@ body
     min-height: 100vh
     display: flex
     flex-direction: column
-    > main
-        flex: 1
-        padding-top: $navigation-height
-
-.container
-    box-sizing: border-box
-    padding: 0 1rem
-    @media screen and (min-width: #{$container-width})
-        width: $container-width
-        margin: 0 auto
 
 .push-right
     margin-left: auto
