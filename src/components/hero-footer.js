@@ -7,19 +7,23 @@ const HeroFooter = ({siteTitle}) => (
     <div className="hero-foot--wrapper">
       <div className="columns">
         <div className="column is-12 hero-menu-desktop has-text-centered">
-          {/* <Link to="/" className="navigation__logo">
-            {siteTitle}
+          <Link to="/">{siteTitle}</Link>
+          <Link to="/" className="nav-items">
+            Home
           </Link>
-          <Link href="/life" className="navigation__item">
-            Life
-          </Link> */}
-          <ul>
-            <Link to="/">Home</Link>
-            <Link to="/learning-notes">Learning Notes</Link>
-            <li>
-              <Link to="/life">Life</Link>
-            </li>
-          </ul>
+          <Link to="/Aboutd" className="nav-items">
+            About
+          </Link>
+          {/* Todo: about within timeline */}
+          <Link to="/learning-notes" className="nav-items">
+            Learning Notes
+          </Link>
+          <Link to="/life" className="nav-items">
+            Life Record
+          </Link>
+          <Link to="/Resume" className="nav-items">
+            Resume
+          </Link>
         </div>
       </div>
     </div>
