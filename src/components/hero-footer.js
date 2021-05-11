@@ -12,7 +12,7 @@ const HeroFooter = ({siteTitle}) => (
             Home
           </Link>
           <Link to="/Aboutd" className="nav-items">
-            About
+            About Me
           </Link>
           {/* Todo: about within timeline */}
           <Link to="/learning-notes" className="nav-items">
