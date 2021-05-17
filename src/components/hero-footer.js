@@ -11,16 +11,13 @@ const HeroFooter = ({siteTitle}) => (
           <Link to="/" className="nav-items">
             Home
           </Link>
-          <Link to="/Aboutd" className="nav-items">
-            About Me
+          {/* Todo: Timeline */}
+          <Link to="/blog" className="nav-items">
+            Blog
           </Link>
-          {/* Todo: about within timeline */}
-          <Link to="/learning-notes" className="nav-items">
-            Learning Notes
-          </Link>
-          <Link to="/life" className="nav-items">
-            Life Record
-          </Link>
+          <Link to="/gallery" className="nav-items">
+            Gallery
+          </Link>{" "}
           <Link to="/Resume" className="nav-items">
             Resume
           </Link>
