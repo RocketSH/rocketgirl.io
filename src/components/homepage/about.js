@@ -12,22 +12,41 @@ function About() {
             <div
               class="column is-6 has-vertically-aligned-content"
               data-aos="fade-right">
-              <p class="is-larger">
-                &emsp;&emsp;
-                <strong>
-                  Showcase is a modern, beautiful personal website template to
-                  showcase who you are, as well as projects you've worked on in
-                  the past.
-                </strong>
+              <p>
+                &emsp;&emsp; I have worked at Footwear manufacturing development
+                center around 5 years in China and Vietnam. I was inspired after
+                joined internal SAP project then decided to learn more
+                acknowlege about digital transformation and modernation web
+                development.
               </p>
               <br />
-              <p>
-                Showcase was built from the ground up with Bulma to be fast and
-                responsive out of the box with all source files well documented
-                for easy to customization. The Showcase template gives you a
-                personal space to share what you are all about as a creative
-                designer, developer, photographer, and more!
-              </p>
+              <div class="columns about-links">
+                <div class="column">
+                  <p class="heading">
+                    <strong>using</strong>
+                  </p>
+                  <p>
+                    <a href="https://reactjs.org/">#react</a>
+                  </p>
+                  <p>
+                    <a href="https://developer.mozilla.org/en-us/docs/web/javascript">
+                      #javascript
+                    </a>
+                  </p>
+                </div>
+                <div class="column">
+                  <p class="heading">
+                    <strong>learning</strong>
+                  </p>
+                  <p>
+                    <a href="https://elixir-lang.org/">#elixir</a>
+                  </p>
+                  <p>
+                    <a href="https://www.postgresql.org/">#postgresql</a>
+                  </p>
+                </div>
+              </div>
+
               <br />
               <div class="is-divider"></div>
               <div class="columns about-links">
