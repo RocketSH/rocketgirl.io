@@ -60,7 +60,11 @@ function About() {
                   <p class="heading">
                     <strong>GitHub</strong>
                   </p>
-                  <p class="subheading">https://github.com/RocketSH</p>
+                  <p class="subheading">
+                    <a href="https://github.com/RocketSH">
+                      https://github.com/RocketSH
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
